@@ -12,5 +12,31 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
+const newTutorials = tutorials.map(tutorial=> {
+return tutorial.split(" ").map(word => {
+  return word[0].toUpperCase() + word.substring(1)
+
+// return word.map((word) => { 
+//   return word[0].toUpperCase() + word.substring(1); 
+// }).join(" ")
+}).join(" ")
+})
+return newTutorials
 }
+
+
+
+
+//   return word[0].toUpperCase() + word.substring(1)
+// }).join("")
+// })
+// return newTutorials.word
+// }
+// }
+// return tutorials.name.charAt(0).toUpperCase()
+
+//iterate into words to split into inl
+
+//capitalize 1st letter
+// add the rest of the word
+// join them back
